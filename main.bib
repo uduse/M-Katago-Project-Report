@@ -1,33 +1,38 @@
 
-@article{clark_teaching_2014,
-	title = {Teaching Deep Convolutional Neural Networks to Play Go},
-	abstract = {Mastering the game of Go has remained a long standing challenge to the ﬁeld of {AI}. Modern computer Go systems rely on processing millions of possible future positions to play well, but intuitively a stronger and more ‘humanlike’ way to play the game would be to rely on pattern recognition abilities rather then brute force computation. Following this sentiment, we train deep convolutional neural networks to play Go by training them to predict the moves made by expert Go players. To solve this problem we introduce a number of novel techniques, including a method of tying weights in the network to ‘hard code’ symmetries that are expect to exist in the target function, and demonstrate in an ablation study they considerably improve performance. Our ﬁnal networks are able to achieve move prediction accuracies of 41.1\% and 44.4\% on two different Go datasets, surpassing previous state of the art on this task by signiﬁcant margins. Additionally, while previous move prediction programs have not yielded strong Go playing programs, we show that the networks trained in this work acquired high levels of skill. Our convolutional neural networks can consistently defeat the well known Go program {GNU} Go, indicating it is state of the art among programs that do not use Monte Carlo Tree Search. It is also able to win some games against state of the art Go playing program Fuego while using a fraction of the play time. This success at playing Go indicates high level principles of the game were learned.},
-	pages = {9},
-	author = {Clark, Christopher and Storkey, Amos},
-	date = {2014},
-	langid = {english},
-	keywords = {m-katago},
-	file = {Clark and Storkey - Teaching Deep Convolutional Neural Networks to Pla.pdf:/Users/Uduse/Zotero/storage/6TJAWVGY/Clark and Storkey - Teaching Deep Convolutional Neural Networks to Pla.pdf:application/pdf}
+@article{clark:go,
+  author        = {Christopher Clark and
+               Amos J. Storkey},
+  title         = {Teaching Deep Convolutional Neural Networks to Play {Go}},
+  journal       = {CoRR},
+  volume        = {abs/1412.3409},
+  year          = {2014},
+  url           = {http://arxiv.org/abs/1412.3409},
+  archiveprefix = {arXiv},
+  eprint        = {1412.3409},
+  timestamp     = {Mon, 13 Aug 2018 16:46:39 +0200},
+  biburl        = {https://dblp.org/rec/journals/corr/ClarkS14.bib},
+  bibsource     = {dblp computer science bibliography, https://dblp.org}
 }
 
-@article{wu_accelerating_2020,
-	title = {Accelerating Self-Play Learning in Go},
-	abstract = {By introducing several improvements to the {AlphaZero} process and architecture, we greatly accelerate self-play learning in Go, achieving a 50x reduction in computation over comparable methods. Like {AlphaZero} and replications such as {ELF} {OpenGo} and Leela Zero, our bot {KataGo} only learns from neural-net-guided Monte Carlo tree search self-play. But whereas {AlphaZero} required thousands of {TPUs} over several days and {ELF} required thousands of {GPUs} over two weeks, {KataGo} surpasses {ELF}’s ﬁnal model after only 19 days on fewer than 30 {GPUs}. Much of the speedup involves non-domain-speciﬁc improvements that might directly transfer to other problems. Further gains from domain-speciﬁc techniques reveal the remaining eﬃciency gap between the best methods and purely general methods such as {AlphaZero}. Our work is a step towards making learning in state spaces as large as Go possible without large-scale computational resources.},
-	pages = {28},
-	author = {Wu, David J},
-	date = {2020},
-	langid = {english},
-	keywords = {m-katago},
-	file = {Wu - Accelerating Self-Play Learning in Go.pdf:/Users/Uduse/Zotero/storage/AQURLXIF/Wu - Accelerating Self-Play Learning in Go.pdf:application/pdf}
+@article{wu:go,
+  author        = {David J. Wu},
+  title         = {Accelerating Self-Play Learning in {Go}},
+  journal       = {CoRR},
+  volume        = {abs/1902.10565},
+  year          = {2019},
+  url           = {http://arxiv.org/abs/1902.10565},
+  archiveprefix = {arXiv},
+  eprint        = {1902.10565},
+  timestamp     = {Tue, 21 May 2019 18:03:40 +0200},
+  biburl        = {https://dblp.org/rec/journals/corr/abs-1902-10565.bib},
+  bibsource     = {dblp computer science bibliography, https://dblp.org}
 }
 
-@article{xiao_memory-augmented_2018,
-	title = {Memory-Augmented Monte Carlo Tree Search},
-	abstract = {This paper proposes and evaluates Memory-Augmented Monte Carlo Tree Search (M-{MCTS}), which provides a new approach to exploit generalization in online realtime search. The key idea of M-{MCTS} is to incorporate {MCTS} with a memory structure, where each entry contains information of a particular state. This memory is used to generate an approximate value estimation by combining the estimations of similar states. We show that the memory based value approximation is better than the vanilla Monte Carlo estimation with high probability under mild conditions. We evaluate M-{MCTS} in the game of Go. Experimental results show that {MMCTS} outperforms the original {MCTS} with the same number of simulations.},
-	pages = {7},
-	author = {Xiao, Chenjun and Mei, Jincheng},
-	date = {2018},
-	langid = {english},
-	keywords = {m-katago},
-	file = {Xiao and Mei - Memory-Augmented Monte Carlo Tree Search.pdf:/Users/Uduse/Zotero/storage/MMCKTMZA/Xiao and Mei - Memory-Augmented Monte Carlo Tree Search.pdf:application/pdf}
+@inproceedings{xiao:mmcts,
+  title     = {Memory-augmented monte carlo tree search},
+  author    = {Xiao, Chenjun and Mei, Jincheng and M{\"u}ller, Martin},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume    = {32},
+  number    = {1},
+  year      = {2018}
 }
